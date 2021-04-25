@@ -1,0 +1,442 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"fil",
+				"file_browser_"
+			],
+			[
+				"file",
+				"file_browser"
+			],
+			[
+				"pep",
+				"pepe_f"
+			],
+			[
+				"pepe",
+				"pepe_"
+			],
+			[
+				"__",
+				"__init__"
+			],
+			[
+				"mai",
+				"main_func"
+			],
+			[
+				"o",
+				"offset_0"
+			],
+			[
+				"pha",
+				"phase_0"
+			],
+			[
+				"off",
+				"offset"
+			],
+			[
+				"sliders",
+				"sliders_on_changed"
+			],
+			[
+				"of",
+				"offset_0"
+			],
+			[
+				"phase",
+				"phase_0"
+			],
+			[
+				"t",
+				"t"
+			],
+			[
+				"files",
+				"files"
+			],
+			[
+				"but",
+				"button_explore"
+			],
+			[
+				"ra",
+				"rainbow_flag"
+			],
+			[
+				"prin",
+				"println"
+			],
+			[
+				"DE",
+				"DEBUG_BTN_PIN"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "main_plot.py",
+			"settings":
+			{
+				"buffer_size": 947,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "file_browser.py",
+			"settings":
+			{
+				"buffer_size": 1745,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "interactive_plot.py",
+			"settings":
+			{
+				"buffer_size": 2684,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Packages/Python/Python.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 157.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/Akorz/Desktop/Python_code/app_debug",
+		"/C/Users/Akorz/Desktop/Python_code/app_debug/__pycache__"
+	],
+	"file_history":
+	[
+		"/C/Users/Akorz/Desktop/Python_code/app_debug/app_debug_project.sublime-project",
+		"/C/Users/Akorz/Desktop/Python_code/test_folder/Blank.py",
+		"/C/Users/Akorz/Desktop/Python_code/app_debug/main_plot.py",
+		"/C/Users/Akorz/Desktop/Python_code/read from file test/Python_program_to_create.py",
+		"/C/Users/Akorz/Desktop/Python_code/app_debug/file_browser.py",
+		"/C/Users/Akorz/Desktop/Python_code/read from file test/arr.py",
+		"/C/Users/Akorz/Desktop/Python_code/read from file test/import arr.py",
+		"/C/Users/Akorz/Desktop/Python_code/read from file test/pandas_read.py",
+		"/C/Users/Akorz/Desktop/skripts/Keep on!.bat",
+		"/C/Users/Akorz/Desktop/Python_code/read from file test/BIG_PEPE.py",
+		"/C/Users/Akorz/Desktop/skripts/genshin_2.bat",
+		"/C/Users/Akorz/Desktop/Python_code/test_folder/interactive_graph.py",
+		"/C/Users/Akorz/Desktop/Python_code/app_debug/interactive_plot.py",
+		"/C/Users/Akorz/Desktop/Python_code/test_folder/pandas_test.py",
+		"/C/Users/Akorz/Desktop/Python_code/read from file test/791_2.DPT",
+		"/C/pandas_read.py",
+		"/F/OPUS_VM/VM_shred_folder/Spectra/A0-492/SORTED/R/Extr/R CONT A0-492 297K Las405+FS-7 0V 0.2min InGaAs NIR GaAs 1mm 32cm F128cm 12000-5000.0.dpt",
+		"/C/Users/Akorz/Desktop/Python_code/test_folder/psd_demo.py",
+		"/C/Users/Akorz/Desktop/Python_code/read from file test/Python_br.py",
+		"/C/Users/Akorz/Desktop/KMSLite_by_Ratiborus_v1.2.7z.020",
+		"/C/Users/Akorz/Desktop/Python_code/test_folder/plot test.py",
+		"/C/Users/Akorz/Desktop/Python_code/read from file test/read_DPT_file.py",
+		"/C/Users/Akorz/Desktop/Python_code/read from file test/readfrom file test.py",
+		"/C/Users/Akorz/Desktop/Python_code/readcsv geeksforgeeks.ipynb",
+		"/C/Users/Akorz/Desktop/Python_code/pokemon.csv",
+		"/C/Users/Akorz/Desktop/Python_code/psd_demo_test.py",
+		"/C/Users/Akorz/Desktop/Python_code/read from file test/# Python program to create.py",
+		"/F/Users/akorz/Desktop/Malygos (Arduino project)/Main tests/test_mode/accessory_fuctions.ino",
+		"/F/Users/akorz/Desktop/Malygos (Arduino project)/Main tests/test_mode/test_mode.sublime-project",
+		"/F/Users/akorz/Desktop/Malygos (Arduino project)/Main tests/test_mode/Programming_prototype_sketch.h",
+		"/F/Users/akorz/Desktop/Malygos (Arduino project)/Main tests/test_mode/test_mode.ino",
+		"/C/Users/Akorz/Desktop/Python_code/psd_demo.py",
+		"/C/Users/Akorz/Desktop/Python_code/app test.py",
+		"/C/Users/Akorz/Desktop/Python_code/test_1.sublime-project",
+		"/F/OPUS_7.2.139.1294/toolbarImagesL.bmp",
+		"/F/Users/akorz/Desktop/Malygos (Arduino project)/Malygos/Programming_prototype_sketch/Programming_prototype_sketch.h",
+		"/F/Users/akorz/Desktop/Malygos (Arduino project)/Malygos/Programming_prototype_sketch/test_mode.ino",
+		"/F/Users/akorz/Desktop/Malygos (Arduino project)/Malygos/Programming_prototype_sketch/Programming_prototype_sketch.ino",
+		"/F/Users/akorz/Desktop/Malygos (Arduino project)/Malygos/Programming_prototype_sketch/accessory_fuctions.ino",
+		"/F/Users/akorz/Desktop/Malygos (Arduino project)/Malygos/Programming_prototype_sketch/BRAIN_RING.ino",
+		"/F/Users/akorz/Desktop/Malygos (Arduino project)/Malygos/Programming_prototype_sketch/CGK.ino",
+		"/F/Users/akorz/Desktop/Malygos (Arduino project)/Malygos/Programming_prototype_sketch/SVOYA_GAME.ino",
+		"/F/Users/akorz/Desktop/Malygos (Arduino project)/Malygos/Programming_prototype_sketch/W_KILLER.ino",
+		"/C/Users/Akorz/Documents/Arduino/libraries/SoftPWM/examples/SoftPWM_Arduino_LED_Blink/SoftPWM_Arduino_LED_Blink.pde",
+		"/F/Users/akorz/Downloads/Модели для печати-20210322T095741Z-001/Модели для печати/Исходники/REF_/на корпус/rocker-switch-kcd1-101-2pin-3pin-1.snapshot.3/Rocker Switch_KCD1-101_2pin.stp",
+		"/F/Users/akorz/.gitconfig",
+		"/F/AMTAG.BIN",
+		"/F/Downloads/Photoshop 2126/Turbo Studio/Photoshop/help/О сборке.txt",
+		"/F/Users/akorz/Desktop/Python_code/plot test.py",
+		"/C/Users/Akorz/Desktop/diploma_2/Исследование спектров фотоотражения гетероструктур (In,Al)AsGaAs методом инфракрасной фурье-спектроскопии.txt",
+		"/F/Downloads/Photoshop 2126/Cameyo apps/With (Home screen)/Photoshop/О сборке.txt",
+		"/F/Downloads/Photoshop 2126/Turbo Studio/Photoshop/help/Читать.rtf",
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/C/Users/Akorz/Desktop/Python_code/plot test.py"
+	],
+	"find":
+	{
+		"height": 39.3333333333
+	},
+	"find_in_files":
+	{
+		"height": 102.0,
+		"where_history":
+		[
+			"F:\\Users\\akorz\\Desktop\\Malygos (Arduino project)\\Malygos\\Programming_prototype_sketch",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"None",
+			"\")",
+			"CGK_init_flag",
+			"state",
+			"tru_state",
+			"seg_1bit_pin",
+			"button_state",
+			"led_state",
+			"current_button_pin"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": true,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "main_plot.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 947,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								597,
+								597
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "file_browser.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1745,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								203,
+								203
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "interactive_plot.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2684,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1512.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 39.3333333333
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 156.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "app_debug_project.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\Users\\Akorz\\Desktop\\Python_code\\test_1.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 173.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
