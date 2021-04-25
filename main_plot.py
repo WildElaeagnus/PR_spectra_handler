@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import file_browser
 from file_browser import file_browser_
 
-DEBUG = True
+DEBUG = True 
 
 if (DEBUG):
 	df = pd.read_csv("test_file.DPT",  delimiter='\t', header=None, names=None, index_col=None )
