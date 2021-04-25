@@ -5,6 +5,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import file_browser
 from file_browser import file_browser_
+from interactive_plot import *
 
 DEBUG = True 
 
@@ -20,17 +21,19 @@ else:
 	# reading csv file 
 	df = pd.read_csv(file_browser.filename,  delimiter='\t', header=None, names=None, index_col=None )
 
-# plotting file
-t = df.iloc[:, 0]
-s = df.iloc[:, 1]
+# parsing file
+x = df.iloc[:, 0]
+y = df.iloc[:, 1]
 
-fig, ax = plt.subplots()
+#call main_plot(x, y) and grag all plots to interactive_graph
 
-ax.plot(t, s)
-ax.invert_xaxis() 
-ax.set(xlabel='k, 1/cm', ylabel='I r. u.',
+fig, ax = plt.subplots(nrows=1, ncols=2,)
+
+ax[0].plot(x, y)
+# ax.invert_xaxis() 
+ax[0].set(xlabel='k, 1/cm', ylabel='I r. u.',
        title="Python_program_to_create.filename")
-ax.grid()
+ax[0].grid()
 
 def k2eV(arg):
 	return 1.23984*arg/10000 
@@ -38,8 +41,18 @@ def k2eV(arg):
 def eV2k(arg):
 	return 1.23984*arg/10000 
 
-secax = ax.secondary_xaxis('top', functions = (k2eV,  eV2k))
+secax = ax[0].secondary_xaxis('top', functions = (k2eV,  eV2k))
 secax.set_xlabel('E, eV')
 
+#plot 2
+
+ax[1].plot(-x,y)
+ax[1].set_ylabel('coherence')
+
+#show window maimazed
+figManager = plt.get_current_fig_manager()
+figManager.window.showMaximized()
+
+# interactive_plot()
 plt.show()
 
