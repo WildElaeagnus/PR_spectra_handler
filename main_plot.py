@@ -27,7 +27,7 @@ y = df.iloc[:, 1]
 
 
 
-interactive_plot(x, y)
+interactive_plot(x, y, 0, 1, 0.1)
 
 # plt.show()
 

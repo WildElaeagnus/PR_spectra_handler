@@ -1,7 +1,7 @@
 from collections import namedtuple
 
 
-def interactive_plot(arg_x, arg_y, x_min=0.0, x_max=1.0, x_stp=1):
+def interactive_plot(arg_x, arg_y, x_min=0.0, x_max=1.0, x_stp=0.01):
 	from numpy import pi, sin
 	import numpy as np
 	import matplotlib.pyplot as plt
@@ -48,7 +48,7 @@ def interactive_plot(arg_x, arg_y, x_min=0.0, x_max=1.0, x_stp=1):
 
 	def signal(amp, freq, phase, offset, cd, wd):
 		def gauss_func():
-			return (1 / ((np.exp( np.float64(-t%1 - cd + offset)/wd )) + (np.exp( np.float64(t%1 - cd - offset)/wd)) + 1))
+			return (1 / ((np.exp((-t - cd + offset)/wd )) + (np.exp((t - cd - offset)/wd)) + 1))
 		return ((amp * sin(2 * pi * freq * t + phase))  * gauss_func()) 
 
 	axis_color = '#fafad2'
@@ -60,7 +60,9 @@ def interactive_plot(arg_x, arg_y, x_min=0.0, x_max=1.0, x_stp=1):
 	# Adjust the subplots region to leave some space for the sliders and buttons
 	fig.subplots_adjust(left=0.2, bottom=0.5)
 
-	t = np.arange(min(arg_x), max(arg_x), (max(arg_x) - min(arg_x))/1000)
+	# t = np.arange(min(arg_x), max(arg_x), (max(arg_x) - min(arg_x))/1000)
+	t = np.arange(x_min, x_max, x_stp)
+
 
 	values = namedtuple('values', 'min max default')
 	amp_0 = values(0.01, 10, 1)
@@ -70,7 +72,7 @@ def interactive_plot(arg_x, arg_y, x_min=0.0, x_max=1.0, x_stp=1):
 	phase_0 = values(0, 2*np.pi, np.pi)
 	offset_0 = values(-10, 10, 0)
 	cd_0 = values(0, 1, 1)
-	wd_0 = values(0, 1, 0)
+	wd_0 = values(0, 1, 0.1)
 
 	# amp_0 = 5
 	# freq_0 = 3
