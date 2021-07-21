@@ -146,9 +146,8 @@ class BlitManager:
     def on_draw(self, event):
         """Callback to register with 'draw_event'."""
         cv = self.canvas
-        if event is not None:
-            if event.canvas != cv:
-                raise RuntimeError
+        if event is not None and event.canvas != cv:
+            raise RuntimeError
         self._bg = cv.copy_from_bbox(cv.figure.bbox)
         self._draw_animated()
 
@@ -202,7 +201,8 @@ if __name__ == "__main__":
     # make a new figure
     fig, ax = plt.subplots()
     # add a line
-    (ln,) = ax.plot(x, np.sin(x), animated=True)
+    ln, = ax.plot(x, np.sin(x), animated=True)
+    plt.show()
     # add a frame number
     fr_number = ax.annotate(
         "0",

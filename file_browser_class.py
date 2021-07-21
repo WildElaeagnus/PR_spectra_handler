@@ -1,31 +1,23 @@
 
 from tkinter import *
 from tkinter import filedialog
+import os
 
-filename = None 
-
-class file_browser_class(object):
+class file_browser_class_():
+	# path to file
+	filename = None
+	curr_directory = os.getcwd()
 	"""docstring for file_browser_class"""
-	def __init__(self, arg):
-		super(file_browser_class, self).__init__()
-		self.arg = arg
+	def __init__(self, ):
+		super(file_browser_class_, self).__init__()
 		
-	# a file explorer in Tkinter
+	# a file explorer
 
-		# import all components
-		# from the tkinter library
-	
-	
+	def file_browser_(self, ):
 
-	def file_browser_():
-		# import filedialog module
-		
-
-		# Function for opening the
-		# file explorer window
+		# Function for opening the file explorer window
 		def browseFiles():
-			global filename
-			filename = filedialog.askopenfilename(initialdir = "/",
+			self.filename = filedialog.askopenfilename(initialdir = self.curr_directory,
 												title = "Select a File",
 												filetypes = (("DPT files",
 																"*.DPT*"),
@@ -33,16 +25,16 @@ class file_browser_class(object):
 																"*.*")))
 			
 			# Change label contents
-			label_file_explorer.configure(text="File Opened: "+filename)
+			label_file_explorer.configure(text="File Opened: "+str(self.filename))
 
 		def pepe():
-			print(filename)
+			print(self.filename)
 			window.destroy()
 			return()
 
+		print(self.filename)
 
-		print(filename)
-			# Create the root window
+		# Create the root window
 		window = Tk()
 
 		# Set window title
@@ -56,7 +48,7 @@ class file_browser_class(object):
 
 		# Create a File Explorer label
 		label_file_explorer = Label(window,
-									text = "File Explorer using Tkinter",
+									text = "File Explorer for PR spectra",
 									width = 100, height = 4,
 									fg = "blue")
 
@@ -75,10 +67,6 @@ class file_browser_class(object):
 							text = "Exit",
 							command = exit)
 
-		# Grid method is chosen for placing
-		# the widgets at respective positions
-		# in a table like structure by
-		# specifying rows and columns
 		label_file_explorer.grid(column = 1, row = 2, columnspan=1000)
 
 		button_explore.grid(column = 1, row = 1)
@@ -91,7 +79,6 @@ class file_browser_class(object):
 		window.mainloop()
 		
 
-
-
 if __name__ == "__main__":
-	file_browser_class.file_browser_()
+	hello = file_browser_class_()
+	hello.file_browser_()

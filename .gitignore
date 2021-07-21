@@ -12,4 +12,9 @@ __pycache__/interactive_plot.cpython-39.pyc
 .idea/inspectionProfiles/profiles_settings.xml
 .idea/app_debug.iml
 main_window.ui
+fft.py
+file_browser.py
+blitting.py
+# map func.py
+test_spectras/
 __pycache__/interactive_plot.cpython-39.pyc
