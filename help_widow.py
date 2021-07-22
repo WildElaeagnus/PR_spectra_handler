@@ -8,6 +8,11 @@ class help_window_class():
     def __init__(self, ):
         super(help_window_class, self).__init__()
 
+    def all_text(self, text2, arg1, arg2):
+        text2.insert(tk.END, arg1, 'label')
+        result = arg2
+        text2.insert(tk.END, result, 'body')
+        return result
 
     def main_winow(self, ):
 
@@ -33,83 +38,104 @@ class help_window_class():
         text2 = tk.Text(window, height=30, width=70 )
         scroll = tk.Scrollbar(window, command=text2.yview)
         text2.configure(yscrollcommand=scroll.set)
-        text2.tag_configure('bold_italics', font=('Arial', 12, 'bold', 'italic'))
         text2.tag_configure('label', font=('Verdana 16 bold'))
-        text2.tag_configure('body', font=('Helvetica 14'), lmargin1=0, lmargin2=40)
+        text2.tag_configure('body', font=('Helvetica 14'), lmargin1=0, lmargin2=65)
         quote = self.all_text(
             text2,
-            '\nПервый пнункт\n',
+            'Help photoreflection spectra handler\n',
             """
-        русский тестк
-        To be, or not to be that is the question:
-        Whether 'tis Nobler in the mind to suffer
-        The Slings and Arrows of outrageous Fortune,
-        Or to take Arms against a Sea of troubles,
-        Aliquam nonummy adipiscing augue. Lorem ipsum dolor sit amet,
-        consectetuer adipiscing elit. Maecenas porttitor congue massa.
-        Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada 
-        libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet 
-        enim. Fusce est. Vivamus a tellus. Pellentesque habitant morbi tristique 
-        senectus et netus et malesuada fames ac turpis egestas. Proin pharetrasenectus et netus et malesuada fames ac turpis egestas. Proin pharetra 
-        nonummy pede. 
+        This program is designed for the processing of photoreflection spectra, specifically for fitting the shape of the interference 
+        signal into the spectrum.
+        Filtering out the interference signal in the spectrum can help to detect a more complex signal that has been distorted by the 
+        interference overlay. 
         """,
         )
 
         quote = self.all_text(
             text2,
-            '\nSecond пнункт\n',
+            '\nLeft graph\n',
             """
-        русский тестк
-        To be, or not to be that is the question:
-        Whether 'tis Nobler in the mind to suffer
-        The Slings and Arrows of outrageous Fortune,
-        Or to take Arms against a Sea of troubles,
-        Aliquam nonummy adipiscing augue. Lorem ipsum dolor sit amet,
-        consectetuer adipiscing elit. Maecenas porttitor congue massa.
-        Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada 
-        libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet 
-        enim. Fusce est. Vivamus a tellus. Pellentesque habitant morbi tristique 
-        senectus et netus et malesuada fames ac turpis egestas. Proin pharetra 
-        nonummy pede. 
+        This graph is needed to adjust the sinusoidal shape as close 
+        as possible to the part of the spectrum that should be 
+        responsible for the interference signal. 
         """,
         )
 
         quote = self.all_text(
             text2,
-            '\nThird пнункт\n',
+            '\nRght graph\n',
             """
-        русский тестк
-        To be, or not to be that is the question:
-        Whether 'tis Nobler in the mind to suffer
-        The Slings and Arrows of outrageous Fortune,
-        Or to take Arms against a Sea of troubles,
-        Aliquam nonummy adipiscing augue. Lorem ipsum dolor sit amet,
-        consectetuer adipiscing elit. Maecenas porttitor congue massa.
-        Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada 
-        libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet 
-        enim. Fusce est. Vivamus a tellus. Pellentesque habitant morbi tristique 
-        senectus et netus et malesuada fames ac turpis egestas. Proin pharetrasenectus et netus et malesuada fames ac turpis egestas. Proin pharetra 
-        nonummy pede. 
+        This graph is needed to see the result of subtracting the fitted sine wave from the original spectrum. 
         """,
         )
+
         quote = self.all_text(
             text2,
-            '\nForth пнункт\n',
+            '\nCd left and righ sliders\n',
             """
-        русский тестк
-        To be, or not to be that is the question:
-        Whether 'tis Nobler in the mind to suffer
-        The Slings and Arrows of outrageous Fortune,
-        Or to take Arms against a Sea of troubles,
-        Aliquam nonummy adipiscing augue. Lorem ipsum dolor sit amet,
-        consectetuer adipiscing elit. Maecenas porttitor congue massa.
-        Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada 
-        libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet 
-        enim. Fusce est. Vivamus a tellus. Pellentesque habitant morbi tristique 
-        senectus et netus et malesuada fames ac turpis egestas. Proin pharetrasenectus et netus et malesuada fames ac turpis egestas. Proin pharetra 
-        nonummy pede. 
+        These sliders represents amount of attenuation by gauss 
+        function from right and left side accordingly.
         """,
         )
+
+        quote = self.all_text(
+            text2,
+            '\nWd left and right sliders\n',
+            """
+        These sliders represents intensity of attenuation by gauss 
+        function from right and left side accordingly.
+        """,
+        )
+
+        quote = self.all_text(
+            text2,
+            '\nAmp slider\n',
+            """
+        This slider represents amplitude of sine signal.
+        """,
+        )
+
+        quote = self.all_text(
+            text2,
+            '\nFreq slider\n',
+            """
+        This slider represents frequency of sine signal.
+        """,
+        )
+
+        quote = self.all_text(
+            text2,
+            '\nPhase slider\n',
+            """
+        This slider represents phase of sine signal from 0 to 2*Pi in 
+        rads. 
+        """,
+        )
+
+        quote = self.all_text(
+            text2,
+            '\nOffset slider\n',
+            """
+        This slider represents offset of sine signal along the x-axis. 
+        """,
+        )
+
+        quote = self.all_text(
+            text2,
+            '\nReset button\n',
+            """
+        This button returns all sliders to their default positions witch is marcked red on each sliider.
+        """,
+        )
+
+        # quote = self.all_text(
+        #     text2,
+        #     '\nHeader\n',
+        #     """
+        # som tex 
+        # """,
+        # )
+
 
 
 
@@ -117,11 +143,6 @@ class help_window_class():
         scroll.pack(side=tk.RIGHT, fill=tk.Y)
         tk.mainloop()
 
-    def all_text(self, text2, arg1, arg2):
-        text2.insert(tk.END, arg1, 'label')
-        result = arg2
-        text2.insert(tk.END, result, 'body')
-        return result
 		
 
 if __name__ == "__main__":

@@ -146,7 +146,7 @@ def interactive_plot(arg_x, arg_y, x_min=0.0, x_max=1.0, x_stp=0.01, y_amp=1):
 	#phase slider
 	phase_slider_ax = fig.add_axes([0.25, 0.05, 0.6, 0.03], facecolor = button_color)
 	phase_slider = Slider(phase_slider_ax, 
-						  'phase',
+						  'Phase',
 						  phase_0.min, 
 						  phase_0.max, 
 						  valinit=phase_0.default)
@@ -154,15 +154,15 @@ def interactive_plot(arg_x, arg_y, x_min=0.0, x_max=1.0, x_stp=0.01, y_amp=1):
 	#offset slider
 	offset_slider_ax = fig.add_axes([0.25, 0.0, 0.6, 0.03], facecolor = button_color)
 	offset_slider = Slider(offset_slider_ax, 
-						   'offset', 
+						   'Offset', 
 						   offset_0.min, 
 						   offset_0.max, 
 						   valinit=offset_0.default)
 
 	# amount of attenuation by gauss function from left side
-	cd_slider_ax_L = fig.add_axes([0.25, 0.2, 0.6, 0.03], facecolor = button_color)
+	cd_slider_ax_L = fig.add_axes([0.25, 0.25, 0.6, 0.03], facecolor = button_color)
 	cd_slider_L = Slider(cd_slider_ax_L, 
-					   'cd left', 
+					   'Cd left', 
 					   cd_L.min, 
 					   cd_L.max, 
 					   valinit=cd_L.default)
@@ -170,15 +170,15 @@ def interactive_plot(arg_x, arg_y, x_min=0.0, x_max=1.0, x_stp=0.01, y_amp=1):
 	# amount of attenuation by gauss function from right side
 	cd_slider_ax_R = fig.add_axes([0.25, 0.35, 0.6, 0.03], facecolor = button_color)
 	cd_slider_R = Slider(cd_slider_ax_R, 
-					   'cd right', 
+					   'Cd right', 
 					   cd_R.min, 
 					   cd_R.max, 
 					   valinit=cd_R.default)
 
 	# intensity of attenuation by gauss function from left side
-	wd_slider_ax_L = fig.add_axes([0.25, 0.25, 0.6, 0.03], facecolor = button_color)
+	wd_slider_ax_L = fig.add_axes([0.25, 0.2, 0.6, 0.03], facecolor = button_color)
 	wd_slider_L = Slider(wd_slider_ax_L, 
-					   'wd left', 
+					   'Wd left', 
 					   wd_L.min, 
 					   wd_L.max, 
 					   valinit=wd_L.default,
@@ -188,7 +188,7 @@ def interactive_plot(arg_x, arg_y, x_min=0.0, x_max=1.0, x_stp=0.01, y_amp=1):
 	# intensity of attenuation by gauss function from right side
 	wd_slider_ax_R = fig.add_axes([0.25, 0.3, 0.6, 0.03], facecolor = button_color)
 	wd_slider_R = Slider(wd_slider_ax_R, 
-					   'wd right', 
+					   'Wd right', 
 					   wd_R.min, 
 					   wd_R.max, 
 					   valinit=wd_R.default)
