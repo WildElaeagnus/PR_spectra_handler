@@ -4,3 +4,7 @@ __pycache__/help_widow.cpython-39.pyc
 __pycache__/file_browser_class.cpython-39.pyc
 __pycache__/file_browser.cpython-39.pyc
 __pycache__/file_browser.cpython-39.pyc
+__pycache__/
+build/
+main_plot.spec
+dist/main_plot.exe

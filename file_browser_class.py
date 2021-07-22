@@ -31,6 +31,9 @@ class file_browser_class_():
 			print(self.filename)
 			window.destroy()
 			return()
+		def exit():
+			window.destroy()
+			return()	
 
 		print(self.filename)
 
