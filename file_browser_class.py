@@ -32,6 +32,10 @@ class file_browser_class_():
 			window.destroy()
 			return()
 
+		def exit():
+			window.destroy()
+			return()
+
 		print(self.filename)
 
 		# Create the root window
