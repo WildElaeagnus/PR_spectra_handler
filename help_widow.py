@@ -44,9 +44,13 @@ class help_window_class():
             text2,
             'Help photoreflection spectra handler\n',
             """
-        This program is designed for the processing of photoreflection spectra, specifically for fitting the shape of the interference 
-        signal into the spectrum.
-        Filtering out the interference signal in the spectrum can help to detect a more complex signal that has been distorted by the 
+        This program is designed for the processing of 
+        photoreflection spectra, specifically for fitting 
+        the shape of the interference signal into the 
+        spectrum.
+        Filtering out the interference signal in the 
+        spectrum can help to detect a more complex signal 
+        that has been distorted by the 
         interference overlay. 
         """,
         )
@@ -55,9 +59,10 @@ class help_window_class():
             text2,
             '\nLeft graph\n',
             """
-        This graph is needed to adjust the sinusoidal shape as close 
-        as possible to the part of the spectrum that should be 
-        responsible for the interference signal. 
+        This graph is needed to adjust the sinusoidal 
+        shape as close as possible to the part of 
+        the spectrum that should be responsible 
+        for the interference signal. 
         """,
         )
 
@@ -65,7 +70,9 @@ class help_window_class():
             text2,
             '\nRght graph\n',
             """
-        This graph is needed to see the result of subtracting the fitted sine wave from the original spectrum. 
+        This graph is needed to see the result of 
+        subtracting the fitted sine wave from the 
+        original spectrum. 
         """,
         )
 
@@ -73,8 +80,9 @@ class help_window_class():
             text2,
             '\nCd left and righ sliders\n',
             """
-        These sliders represents amount of attenuation by gauss 
-        function from right and left side accordingly.
+        These sliders represents amount of 
+        attenuation by gauss function from right 
+        and left side accordingly.
         """,
         )
 
@@ -82,8 +90,9 @@ class help_window_class():
             text2,
             '\nWd left and right sliders\n',
             """
-        These sliders represents intensity of attenuation by gauss 
-        function from right and left side accordingly.
+        These sliders represents intensity of 
+        attenuation by gauss function from 
+        right and left side accordingly.
         """,
         )
 
@@ -124,7 +133,8 @@ class help_window_class():
             text2,
             '\nReset button\n',
             """
-        This button returns all sliders to their default positions witch is marcked red on each sliider.
+        This button returns all sliders to their default 
+        positions witch is marcked red on each sliider.
         """,
         )
 
