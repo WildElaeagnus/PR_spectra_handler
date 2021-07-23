@@ -1,3 +1,4 @@
+# PR specra handlel v0.5
 # Import some libs
 from mpmath import *
 # import numpy as np
