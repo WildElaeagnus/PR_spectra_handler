@@ -78,7 +78,7 @@ class help_window_class():
 
         quote = self.all_text(
             text2,
-            '\nCd left and righ sliders\n',
+            '\nCd left and right sliders\n',
             """
         These sliders represents amount of 
         attenuation by gauss function from right 
@@ -134,7 +134,7 @@ class help_window_class():
             '\nReset button\n',
             """
         This button returns all sliders to their default 
-        positions witch is marcked red on each sliider.
+        positions witch is marcked red on each slider.
         """,
         )
 

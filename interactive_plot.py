@@ -250,7 +250,9 @@ def interactive_plot(arg_x, arg_y, x_min=0.0, x_max=1.0, x_stp=0.01, y_amp=1):
 # endregion
 
 	figManager = plt.get_current_fig_manager()
-	figManager.window.showMaximized()
+	try:
+		figManager.window.showMaximized()
+	except: pass
 	fig.canvas.manager.set_window_title('PR spectra handler')
 
 	# print(plt.ion())
