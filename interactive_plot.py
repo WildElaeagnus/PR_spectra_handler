@@ -1,19 +1,15 @@
 from collections import namedtuple
-# from numpy import right_shift
 from help_widow import *
-
 from timeit import default_timer as timer
 import numpy as np
 from numpy import pi, sin
 from numpy.core.fromnumeric import size
 import matplotlib.pyplot as plt
 from matplotlib.widgets import Slider, Button, RadioButtons
-
 from numba import njit
 
-
 def interactive_plot(arg_x, arg_y, x_min=0.0, x_max=1.0, x_stp=0.01, y_amp=1):
-	# som vars 
+
 	button_color = '#fafad0'
 	left_curve_color = '#00ff5f'
 	right_curve_color = '#ff3f00'
@@ -21,27 +17,17 @@ def interactive_plot(arg_x, arg_y, x_min=0.0, x_max=1.0, x_stp=0.01, y_amp=1):
 	# TIMEIT = True
 	TIMEIT = False
 
-	# allocate space in fig for 2 graphs
-	# with plt.ion():
 	fig, ax = plt.subplots(nrows=1, ncols=2,)
-	
-	# left graph with raw specrta
-	# with plt.ion():
-	line, = ax[0].plot(arg_x, arg_y,)
 
+	line, = ax[0].plot(arg_x, arg_y,)
 	ax[0].set(xlabel='k, 1/cm', ylabel='I r. u.',
 	        	title="Raw spectra and sine")
 	ax[0].grid()
 
 	# right graph with rew spectra
 	line_, = ax[1].plot(arg_x, arg_y,)
-
 	ax[1].set(xlabel='k, 1/cm', ylabel='I r. u.',
 	        	title="Raw spectra and substracted spectra")
-	# ax[1].set_ylabel("pepe",)
-	# ax[1].toggle(all=True)
-
-	# ax[1].tick_params(right=True)
 	ax[1].grid()
 
 	# secondary axes
@@ -59,12 +45,10 @@ def interactive_plot(arg_x, arg_y, x_min=0.0, x_max=1.0, x_stp=0.01, y_amp=1):
 	secax.set_xlabel('E, eV')
 
 	#sine generator
-	# def map_(x, out_min, out_max):
-	# 	return (x - min(x)) * (out_max - out_min) / (max(x) - min(x)) + out_min
 	@njit
 	def signal(amp, freq, phase, offset, cd_left, wd_left, cd_right, wd_right):
 	
-		# x = t but transformed for calculating big exponents
+		# x = t but transformed to calculate large exponents
 		x = map_(t, 0, 1)
 		def gauss_func():
 			return (1 / ((np.exp((-x - cd_left + offset)/wd_left )) + (np.exp((x - cd_right - offset)/wd_right)) + 1))
@@ -83,7 +67,6 @@ def interactive_plot(arg_x, arg_y, x_min=0.0, x_max=1.0, x_stp=0.01, y_amp=1):
 	# t = np.arange(min(arg_x), max(arg_x), (max(arg_x) - min(arg_x))/1000)
 	t = np.arange(x_min, x_max, x_stp)
 	print("size of t: "+str(size(t)))
-
 
 	values = namedtuple('values', 'min max default')
 	amp_0 = values(0.01, 0.5, y_amp)
@@ -118,12 +101,8 @@ def interactive_plot(arg_x, arg_y, x_min=0.0, x_max=1.0, x_stp=0.01, y_amp=1):
 												color=left_curve_color)
 
 
-
 # region
 	# Add sliders for tweaking the parameters
-	# constrain slider precision in regart to performance
-	# slider_step = 100
-	# that is not helping anyway
 
 	# Define an axes area and draw a slider in it
 	amp_slider_ax  = fig.add_axes([0.25, 0.15, 0.6, 0.03], facecolor = button_color) #, axisbg=button_color
@@ -132,8 +111,6 @@ def interactive_plot(arg_x, arg_y, x_min=0.0, x_max=1.0, x_stp=0.01, y_amp=1):
 						amp_0.min, 
 						amp_0.max, 
 						valinit=amp_0.default)
-
-
 
 	# Draw frequency slider
 	freq_slider_ax = fig.add_axes([0.25, 0.1, 0.6, 0.03], facecolor = button_color)
@@ -183,7 +160,6 @@ def interactive_plot(arg_x, arg_y, x_min=0.0, x_max=1.0, x_stp=0.01, y_amp=1):
 					   wd_L.max, 
 					   valinit=wd_L.default,
 					   )
-					#    valstep= (wd_L.max - wd_L.min)/slider_step
 
 	# intensity of attenuation by gauss function from right side
 	wd_slider_ax_R = fig.add_axes([0.25, 0.3, 0.6, 0.03], facecolor = button_color)
@@ -239,13 +215,11 @@ def interactive_plot(arg_x, arg_y, x_min=0.0, x_max=1.0, x_stp=0.01, y_amp=1):
 	def help_button_on_clicked(mouse_event):
 		hlp = help_window_class()
 		hlp.main_winow()
-		# wd_slider_R.set_min(wd_R.min+1)
-		# wd_slider_R.set_val(0.5)
-		# wd_slider_R.set_max(10)
+
 	help_button.on_clicked(help_button_on_clicked)
 
-	# add buttons to save and load slider values
-	#md get max and min values of sliders automatically? but am not sure about that
+	# TODO buttons to save and load slider values
+	# TODO get max and min values of sliders automatically? but am not sure about that
 
 # endregion
 
@@ -254,16 +228,14 @@ def interactive_plot(arg_x, arg_y, x_min=0.0, x_max=1.0, x_stp=0.01, y_amp=1):
 		figManager.window.showMaximized()
 	except: pass
 	fig.canvas.manager.set_window_title('PR spectra handler')
-
-	# print(plt.ion())
 	plt.show()
+
 @njit
 def map_(x, out_min, out_max):
 	return (x - min(x)) * (out_max - out_min) / (max(x) - min(x)) + out_min
 
 if __name__ == "__main__":
 	import numpy as np
-	# interactive_plot([-1, 0, 100], [-10, 2, 10], -1, 100)
 	interactive_plot(np.arange(-1, 100, .1), map_(np.arange(-1, 100, 0.1),0,1), -1, 100, 0.1)
 
 	

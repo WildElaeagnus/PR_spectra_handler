@@ -26,8 +26,9 @@ class file_browser_class_():
 			
 			# Change label contents
 			label_file_explorer.configure(text="File Opened: "+str(self.filename))
+			close_window()
 
-		def pepe():
+		def close_window():
 			print(self.filename)
 			window.destroy()
 			return()
@@ -61,9 +62,9 @@ class file_browser_class_():
 								command = browseFiles)
 
 
-		button_open = Button(window,
-								text = "Open graph",
-								command = pepe)
+		# button_open = Button(window,
+		# 						text = "Open graph",
+		# 						command = close_window)
 
 
 		button_exit = Button(window,
@@ -74,7 +75,7 @@ class file_browser_class_():
 
 		button_explore.grid(column = 1, row = 1)
 
-		button_open.grid(column = 2, row = 1)
+		# button_open.grid(column = 2, row = 1)
 
 		button_exit.grid(column = 3,row = 1)
 

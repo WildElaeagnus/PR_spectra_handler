@@ -1,11 +1,7 @@
-# PR specta handler v1.0.0
-# Import some libs
-from mpmath import *
-# import numpy as np
-import pandas as pd
-# import matplotlib.pyplot as plt
+# PR specta handler
 
-# import code from other files
+from mpmath import *
+import pandas as pd
 from file_browser_class import *
 from interactive_plot import *
 
@@ -21,13 +17,12 @@ else:
 	# check if file path is choosen
 	if flb.filename is None:
 		exit()
-	# reading csv file 
+	# read csv file 
 	df = pd.read_csv(flb.filename,  delimiter='\t', header=None, names=None, index_col=None )
 
-# parsing file
+# parse file
 x = df.iloc[:, 0]
 x = x.to_numpy()
-# y = df.iloc[::-1, 1].reset_index(drop=True)
 y = df.iloc[:, 1]
 y = y.to_numpy()
 
