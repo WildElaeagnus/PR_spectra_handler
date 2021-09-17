@@ -1,5 +1,5 @@
 from collections import namedtuple
-from help_widow import *
+from help_window import *
 from timeit import default_timer as timer
 import numpy as np
 from numpy import pi, sin
