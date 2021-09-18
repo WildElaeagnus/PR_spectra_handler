@@ -1,14 +1,12 @@
+---
 
+
+---
 
 <h1 id="photoreflection-spectra-handler">Photoreflection spectra handler</h1>
-<p>This program is designed for the processing of<br>
-photoreflection spectra, specifically for fitting<br>
-the shape of the interference signal into the<br>
+<p>This program is designed for the processing of photoreflection spectra, specifically for fitting the shape of the interference signal into the<br>
 spectrum.<br>
-Filtering out the interference signal in the<br>
-spectrum can help to detect a more complex signal<br>
-that has been distorted by the<br>
-interference overlay.</p>
+Filtering out the interference signal in the spectrum can help to detect a more complex signal that has been distorted by the interference overlay.</p>
 <h2 id="installation">Installation</h2>
 <ol>
 <li>Make sure python3 is installed.</li>
