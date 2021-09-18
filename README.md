@@ -1,7 +1,4 @@
----
 
-
----
 
 <h1 id="photoreflection-spectra-handler">Photoreflection spectra handler</h1>
 <p>This program is designed for the processing of<br>
