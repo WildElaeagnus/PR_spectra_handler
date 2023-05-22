@@ -1,5 +1,5 @@
 matplotlib==3.4.2
-mpmath==1.2.1
+mpmath==1.3.0
 numba==0.53.1
 numpy==1.22.0
 pandas==1.2.3
